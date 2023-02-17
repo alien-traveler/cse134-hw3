@@ -61,7 +61,7 @@ nav {
 #mainTitle {
     display: flex;
     justify-content: center;
-    margin: 5% 5%;
+    margin: 5% 5% 0;
     font-style: italic;
     /* border: 1px solid; */
 }
