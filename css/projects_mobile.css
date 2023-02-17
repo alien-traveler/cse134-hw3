@@ -1,8 +1,6 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    
-} */
+* {
+    max-width: 60ch;
+}
 
 header {
     grid-area: header;
@@ -14,7 +12,7 @@ body {
     "header header"
     "main main"
     "footer footer";
-    background-color: aliceblue;
+    background-color: azure;
     grid-gap: 2%;
     margin: 0;
 }
@@ -66,7 +64,13 @@ nav {
     /* border: 1px solid; */
 }
 
-/* Pannel 1 */
+footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Panel 1 */
 
 .panel1 {
     display: flex;
@@ -77,25 +81,33 @@ nav {
     flex-wrap: wrap;
 }
 
-.myPhoto, .myIntro{
+.proj1_left, .proj1_right {
     margin: 2%;
-    /* border: 1px solid black; */
 }
 
-.myPhoto h2 {
+.proj1_left h2 {
     font-size: x-large;
-    margin: 2ch auto;
+    margin: 10% auto;
     text-align: center;
 }
 
-.myIntro {
+.proj1_right {
     max-width: 50ch;
     line-height: 2rem;
+    font-size: medium;
+}
+
+.proj1_right p {
+    font-style: italic;
     font-size: large;
 }
 
-.myIntro p {
-    margin: 12%;
+figcaption {
+    text-align: center;
+}
+
+picture {
+    margin-left: 25%;
 }
 
 /* Panel 2 */
@@ -109,33 +121,30 @@ nav {
     flex-wrap: wrap;
 }
 
-.myEd, aside {
+.proj2_left, .proj2_right {
     margin: 2%;
-    max-width: 50ch;
-    line-height: 2rem;
-    font-size: large;
 }
 
-.myEd h2 {
+.proj2_left h2 {
     font-size: x-large;
-    margin: 2ch auto;
+    margin: 10% auto;
     text-align: center;
 }
 
-.myEd p {
-    margin: 5% auto;
+.proj2_right {
+    max-width: 50ch;
+    line-height: 2rem;
+    font-size: medium;
 }
 
-aside {
-    float: right;
-    border: 2px solid red;
-    border-radius: 10%;
-    padding: 1%;
-    background-color: rgb(255, 253, 240);
+.proj2_right p {
+    font-style: italic;
+    font-size: large;
 }
 
-aside li {
-    list-style: none;
+iframe {
+    width: 410px;
+    height: 400px;
 }
 
 /* Panel 3 */
@@ -145,43 +154,60 @@ aside li {
     align-items: center;
     justify-content: center;
     gap: 3em;
+    margin-bottom: 5%;
     flex-wrap: wrap;
 }
 
-.skillTb, .skills {
+.proj3_left, .proj3_right {
     margin: 2%;
+}
+
+.proj3_left h2 {
+    font-size: x-large;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.proj3_right {
     max-width: 50ch;
     line-height: 2rem;
-    /* font-size: large; */
+    font-size: medium;
 }
 
-.skillTb {
+.proj3_right p {
+    font-style: italic;
     font-size: large;
-
 }
 
-.skillTb h2 {
-    font-size: x-large;
-    margin: 2ch auto;
-    text-align: center;
+#essayBtn, #gameBtn {
+    background-color: teal;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 rgb(0, 69, 69);
 }
 
-table, td, th {
-    border: 1px solid;
-    text-align: center;
-    padding: 3px;
+#essayBtn:hover {
+    background-color: rgb(19, 86, 86);
 }
 
-col {
-    background-color: rgb(159, 231, 255, 0.884);
+#gameBtn:hover {
+    background-color: rgb(19, 86, 86);
 }
 
-.skills {
-    padding-top: 15vh;
+#essayBtn:active {
+    box-shadow: none;
+    top: 5px;
 }
 
-footer {
-    grid-area: footer;
-    padding: 20px;
-    text-align: right;
+#gameBtn:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.btnLi {
+    list-style: none;
+    margin: 2rem;
+    /* vertical-align: center; */
 }

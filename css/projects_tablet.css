@@ -14,7 +14,7 @@ body {
     "header header"
     "main main"
     "footer footer";
-    background-color: aliceblue;
+    background-color: beige;
     grid-gap: 2%;
     margin: 0;
 }
@@ -66,7 +66,13 @@ nav {
     /* border: 1px solid; */
 }
 
-/* Pannel 1 */
+footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Panel 1 */
 
 .panel1 {
     display: flex;
@@ -77,25 +83,29 @@ nav {
     flex-wrap: wrap;
 }
 
-.myPhoto, .myIntro{
+.proj1_left, .proj1_right {
     margin: 2%;
-    /* border: 1px solid black; */
 }
 
-.myPhoto h2 {
+.proj1_left h2 {
     font-size: x-large;
-    margin: 2ch auto;
+    margin: 10% auto;
     text-align: center;
 }
 
-.myIntro {
-    max-width: 50ch;
+.proj1_right {
+    max-width: 70ch;
     line-height: 2rem;
+    font-size: medium;
+}
+
+.proj1_right p {
+    font-style: italic;
     font-size: large;
 }
 
-.myIntro p {
-    margin: 12%;
+figcaption {
+    text-align: center;
 }
 
 /* Panel 2 */
@@ -109,33 +119,30 @@ nav {
     flex-wrap: wrap;
 }
 
-.myEd, aside {
+.proj2_left, .proj2_right {
     margin: 2%;
-    max-width: 50ch;
-    line-height: 2rem;
-    font-size: large;
 }
 
-.myEd h2 {
+.proj2_left h2 {
     font-size: x-large;
-    margin: 2ch auto;
+    margin: 10% auto;
     text-align: center;
 }
 
-.myEd p {
-    margin: 5% auto;
+.proj2_right {
+    max-width: 70ch;
+    line-height: 2rem;
+    font-size: medium;
 }
 
-aside {
-    float: right;
-    border: 2px solid red;
-    border-radius: 10%;
-    padding: 1%;
-    background-color: rgb(255, 253, 240);
+.proj2_right p {
+    font-style: italic;
+    font-size: large;
 }
 
-aside li {
-    list-style: none;
+iframe {
+    width: 610px;
+    height: 600px;
 }
 
 /* Panel 3 */
@@ -145,43 +152,60 @@ aside li {
     align-items: center;
     justify-content: center;
     gap: 3em;
+    margin-bottom: 5%;
     flex-wrap: wrap;
 }
 
-.skillTb, .skills {
+.proj3_left, .proj3_right {
     margin: 2%;
-    max-width: 50ch;
-    line-height: 2rem;
-    /* font-size: large; */
 }
 
-.skillTb {
-    font-size: large;
-
-}
-
-.skillTb h2 {
+.proj3_left h2 {
     font-size: x-large;
-    margin: 2ch auto;
+    margin: 10% auto;
     text-align: center;
 }
 
-table, td, th {
-    border: 1px solid;
-    text-align: center;
-    padding: 3px;
+.proj3_right {
+    max-width: 70ch;
+    line-height: 2rem;
+    font-size: medium;
 }
 
-col {
-    background-color: rgb(159, 231, 255, 0.884);
+.proj3_right p {
+    font-style: italic;
+    font-size: large;
 }
 
-.skills {
-    padding-top: 15vh;
+#essayBtn, #gameBtn {
+    background-color: teal;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 rgb(0, 69, 69);
 }
 
-footer {
-    grid-area: footer;
-    padding: 20px;
-    text-align: right;
+#essayBtn:hover {
+    background-color: rgb(19, 86, 86);
+}
+
+#gameBtn:hover {
+    background-color: rgb(19, 86, 86);
+}
+
+#essayBtn:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+#gameBtn:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.btnLi {
+    list-style: none;
+    margin: 2rem;
+    /* vertical-align: center; */
 }
