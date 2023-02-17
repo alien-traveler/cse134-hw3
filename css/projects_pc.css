@@ -180,6 +180,8 @@ iframe {
     font-size: large;
 }
 
+/* Link as Button */
+
 #essayBtn, #gameBtn {
     background-color: teal;
     color: white;
