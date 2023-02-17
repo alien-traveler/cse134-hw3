@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    /* box-sizing: border-box; */
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.navLinks li a{
+    color: #fff;
+    background-color: teal;
+}
+
+.navLinks li a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease;   
+}
+
+.navLinks {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    background-color: teal;
+}
+

@@ -5,36 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will's Website</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_pc.css">
+    <!-- <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/index_pc.css">
+    <link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 767px)" href="css/index_tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/index_mobile.css"> -->
     <style></style>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="navLinks">
                 <li><a href="/index.html">Will's Website!</a></li>
                 <li><a href="/Projects.html">My Project</a></li>
                 <li><a href="/Interest.html">My Interests</a></li>
                 <li><a href="/Contact.html">Contact Me!</a></li>
             </ul>
         </nav>
-        <h1>Will's Website!</h1>
+        <h1 id="mainTitle">Hey, I'm Will Luo</h1>
     </header>
     <main>
         <!-- My background -->
-        <section class="panel">
-            <h2>A Little About Myself</h2>
-            <div class="myPhoto">
-                <figure class="myPhoto">
-                    <picture class="myPhoto">
-                        <source media="(min-width:2000px)" srcset="image/me.jpg">
-                        <source media="(min-width:550px)" srcset="image/meS.jpg">
-                        <img class="myPhoto" src="image/meXS.jpg" alt="image/ImageNotFound.jpeg">
+        <section class="panel1">
+            
+            <article class="myPhoto">
+                <h2>A Little About Myself</h2>
+                <figure>
+                    <picture>
+                        <!-- <source media="(min-width:768px)" srcset="image/me.jpg">
+                        <source media="(min-width:640px)" srcset="image/meS.jpg">
+                        <img src="image/meXS.jpg" alt="image/ImageNotFound.jpeg"> -->
+                        <source media="(min-width:640px)" srcset="image/me.jpg">
+                        <img src="image/meS.jpg" alt="image/ImageNotFound.jpeg">
                     </picture>
                 </figure>
-            </div>
-            <div class="myIntro">
-                <p class="myIntro">
+            </article>
+            <article class="myIntro">
+                <p>
                     Hi there! This is Will Luo, a second-year Computer Science student at UC San Diego. <br />
                     I grew up in Shanghai, China, and I traveled to the U.S. when I was 15 to study at a high school in Charlotte, NC.<br />
                     I have been playing with codes for around five years, and I am still loving it! No matter what I am coding for, <br />
@@ -44,27 +50,29 @@
                 <p>
                     Fun fact about me: I don't like raw onions in my burger, but I like <b>crispy onions</b>!
                 </p>
-            </div>
+            </article>
         </section>
         <hr>
         <!-- My education -->
-        <section class="panel">
-            <h2>My College Progress</h2>
-            <p class="myEd">
-                At UC San Diego, I have taken an extensive number of CS classes so far:
-            </p>
-            <ul class="myEd">
-                <li>CSE 11. Introduction to Programming and Computational Problem-Solving: Accelerated Pace</li>
-                <li>CSE 12. Basic Data Structures and Object-Oriented Design</li>
-                <li>CSE 15L. Software Tools and Techniques Laboratory</li>
-                <li>CSE 20. Discrete Mathematics</li>
-                <li>CSE 21. Mathematics for Algorithms and Systems</li>
-                <li>CSE 30. Computer Organization and Systems Programming</li>
-                <li>CSE 100. Advanced Data Structures</li>
-                <li>CSE 103. A Practical Introduction to Probability and Statistics</li>
-                <li>CSE 110. Software Engineering</li>
-            </ul>
-            <aside class="myEd">
+        <section class="panel2">
+            <article class="myEd">
+                <h2>My College Progress</h2>
+                <p>
+                    At UC San Diego, I have taken those CS classes so far:
+                </p>
+                <ul>
+                    <li>CSE 11. Introduction to Programming and Computational Problem-Solving: Accelerated Pace</li>
+                    <li>CSE 12. Basic Data Structures and Object-Oriented Design</li>
+                    <li>CSE 15L. Software Tools and Techniques Laboratory</li>
+                    <li>CSE 20. Discrete Mathematics</li>
+                    <li>CSE 21. Mathematics for Algorithms and Systems</li>
+                    <li>CSE 30. Computer Organization and Systems Programming</li>
+                    <li>CSE 100. Advanced Data Structures</li>
+                    <li>CSE 103. A Practical Introduction to Probability and Statistics</li>
+                    <li>CSE 110. Software Engineering</li>
+                </ul>
+            </article>
+            <aside>
                 <h3>I am currently taking those classes:</h3>
                 <ul>
                     <li>CSE 134B. Web Client Languages</li>
@@ -76,52 +84,53 @@
         </section>
         <hr>
         <!-- My Skills -->
-        <section class="panel">
-            <h2>My SkillSet</h2>
-            <table class="skills">
-                <caption>Coding Langauges</caption>
-                <colgroup>
-                    <col span="2">
-                    <col>
-                </colgroup>
-                <tr>
-                    <th>Languages</th>
-                    <th>Experience Level</th>
-                    <th>Number of Projects</th>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>Proficient</td>
-                    <td>~10</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Proficient</td>
-                    <td>~8</td>
-                </tr>
-                <tr>
-                    <td>C/C++</td>
-                    <td>Proficient</td>
-                    <td>~3</td>
-                </tr>
-                <tr>
-                    <td>HTML, CSS, JS</td>
-                    <td>Competent</td>
-                    <td>~4</td>
-                </tr>
-                <tr>
-                    <td>Git</td>
-                    <td>Competent</td>
-                    <td>~10</td>
-                </tr>
-            </table>
-            <div class="skills">
+        <section class="panel3">
+            <article class="skillTb">
+                <h2>My SkillSet</h2>
+                <table>
+                    <caption>Coding Langauges</caption>
+                    <colgroup>
+                        <col id="impCol" span="2">
+                    </colgroup>
+                    <tr>
+                        <th>Languages</th>
+                        <th>Experience Level</th>
+                        <th>Number of Projects</th>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Proficient</td>
+                        <td>~10</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Proficient</td>
+                        <td>~8</td>
+                    </tr>
+                    <tr>
+                        <td>C/C++</td>
+                        <td>Proficient</td>
+                        <td>~3</td>
+                    </tr>
+                    <tr>
+                        <td>HTML, CSS, JS</td>
+                        <td>Competent</td>
+                        <td>~4</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Competent</td>
+                        <td>~10</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="skills">
                 <p>I work with Java for the longest time. It is also my <code>Hello World</code> language. <br />
                     To me, Java is used mainly for the backend of a program or a website.</p>
                 <p>Python is also a familiar tool to me, where I used it for doing image research and building games.</p>
                 <p>I have learned HTML, CSS, JS, and Git a few years ago, and I am glad now I have a deeper understanding <br />
                     of them now by taking CSE 110 and CSE 134B.</p>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
