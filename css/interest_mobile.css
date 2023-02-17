@@ -14,7 +14,7 @@ body {
     "header header"
     "main main"
     "footer footer";
-    background-color: aliceblue;
+    background-color: azure;
     grid-gap: 2%;
     margin: 0;
 }
